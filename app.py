@@ -466,6 +466,14 @@ with st.sidebar:
     else:
         st.info("📌 **RuralConecta AI v2.0**\n\nDesarrollado para conectar y vincular a los ciudadanos de las zonas rurales.")
 
+    st.divider()
+    st.link_button(
+        "🚀 Desplegar en Streamlit Cloud",
+        "https://share.streamlit.io/deploy?repository=diego305/RuralConecta-AI&branch=main&mainModule=app.py",
+        use_container_width=True,
+        help="Publicar RuralConecta AI directamente en la nube gratuita de Streamlit"
+    )
+
 # --- Banner Municipal Corporativo ---
 if logo_data_url:
     st.markdown(f"""
