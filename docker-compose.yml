@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  ruralconecta:
+    build: .
+    container_name: ruralconecta-app
+    image: ruralconecta:latest
+    stdin_open: true # Mantiene la entrada estándar abierta (equivalente a -i en docker run)
+    tty: true        # Habilita una pseudoterminal (equivalente a -t en docker run)
+    volumes:
+      # Monta la carpeta local 'datos' en el contenedor para persistir la base de datos sqlite
+      - ./datos:/app/datos
+      # Monta la carpeta local 'reportes' en el contenedor para ver reportes fuera del contenedor
+      - ./reportes:/app/reportes
