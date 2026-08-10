@@ -6,5 +6,5 @@ textColor = "#1F2937"
 font = "sans serif"
 
 [client]
-showDeployButton = false
-toolbarMode = "minimal"
+showDeployButton = true
+toolbarMode = "auto"

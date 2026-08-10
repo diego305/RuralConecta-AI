@@ -50,15 +50,6 @@ st.set_page_config(
 # --- CSS Premium y Personalización ---
 st.markdown("""
 <style>
-    /* Ocultar botón Deploy y Toolbar de Streamlit Cloud */
-    .stDeployButton, button[title="Deploy this app"], header[data-testid="stHeader"] .stDeployButton {
-        display: none !important;
-        visibility: hidden !important;
-    }
-    header[data-testid="stHeader"] {
-        background-color: transparent !important;
-    }
-    
     /* Estilos generales */
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600;700&display=swap');
     
